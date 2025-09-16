@@ -1,3 +1,62 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://Mohammad-Al-Amin-98.github.io/"
+languageCode = "en-us"
+title = "Mohammad Al Amin — Portfolio & Blog"
+
+# THEME: pick ONE
+# For Hugo Modules:
+theme = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
+# For Git submodule:
+# theme = "ananke"
+
+[pagination]
+pagerSize = 10
+enableRobotsTXT = true
+# SectionPagesMenu auto-adds top-level sections to "main" menu (optional)
+SectionPagesMenu = "main"
+
+[params]
+  author = "Mohammad Al Amin"
+  description = "Portfolio, blog, and projects."
+  background_color_class = "bg-black"       # Ananke/Tachyons
+  text_color = "near-black"                 # Tachyons color name
+  recent_posts_number = 3
+  read_more_copy = "Read more"
+
+# Menus: define explicit order and add external/internal links like Resume
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Blogs"
+    url = "/blog/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Resume"
+    url = "/files/resume.pdf"
+    weight = 40
+
+  [[menu.main]]
+    name = "Contact Me"
+    url = "/contact/"
+    weight = 50
+
+# Optional: Analytics, comments, sitemap, etc.
+googleAnalytics = ""       # UA-XXXX or G-XXXX if you use GA4 + template
+# Disqus (if you want):
+# [services.disqus]
+#   shortname = "YOURSHORTNAME"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
