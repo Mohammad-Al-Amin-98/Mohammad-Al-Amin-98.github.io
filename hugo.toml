@@ -21,6 +21,7 @@ SectionPagesMenu = "main"
   text_color = "near-black"                 # Tachyons color name
   recent_posts_number = 3
   read_more_copy = "Read more"
+  custom_css = ["custom.css"]
 
 # Menus: define explicit order and add external/internal links like Resume
 [menu]
@@ -30,7 +31,7 @@ SectionPagesMenu = "main"
     weight = 10
 
   [[menu.main]]
-    name = "Blogs"
+    name = "Blog"
     url = "/blog/"
     weight = 20
 
@@ -45,7 +46,7 @@ SectionPagesMenu = "main"
     weight = 40
 
   [[menu.main]]
-    name = "Contact Me"
+    name = "Contact"
     url = "/contact/"
     weight = 50
 

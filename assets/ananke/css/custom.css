@@ -1,0 +1,10 @@
+/* Force Ananke navbar to use mobile menu early */
+@media (max-width: 1200px) {
+  .navbar-menu {
+    display: none !important;  /* hide the horizontal menu */
+  }
+
+  .navbar-burger {
+    display: block !important; /* show hamburger */
+  }
+}
